@@ -1,5 +1,6 @@
 package com.example.borutoapp.presentation.screens
 
+import android.content.res.Configuration.UI_MODE_NIGHT_YES
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.isSystemInDarkTheme
@@ -52,8 +53,14 @@ fun Splash() {
     }
 }
 
-@Preview
 @Composable
+@Preview
 fun SplashScreenPreview() {
+    Splash()
+}
+
+@Composable
+@Preview(uiMode = UI_MODE_NIGHT_YES)
+fun SplashScreenDarkPreview() {
     Splash()
 }
