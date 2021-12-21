@@ -16,7 +16,7 @@ import com.google.accompanist.pager.ExperimentalPagerApi
 fun SetupNavGraph(navController: NavHostController) {
     NavHost(
         navController,
-        startDestination = Screen.Splash.route
+        startDestination = Screen.Welcome.route
     ) {
         composable(route = Screen.Splash.route) {
             SplashScreen(navController)
