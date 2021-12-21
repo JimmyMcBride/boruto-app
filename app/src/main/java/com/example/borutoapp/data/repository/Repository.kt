@@ -8,7 +8,7 @@ class Repository @Inject constructor(
     private val dataStore: DataStoreOperations
 ) {
     suspend fun saveOnBoardingState(completed: Boolean) {
-        dataStore.saveOnBoardingState(completed = false)
+        dataStore.saveOnBoardingState(completed)
     }
 
     fun readOnBoardingState(): Flow<Boolean> {
