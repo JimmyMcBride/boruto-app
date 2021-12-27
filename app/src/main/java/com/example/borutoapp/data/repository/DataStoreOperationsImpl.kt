@@ -17,7 +17,6 @@ import java.io.IOException
 
 val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = PREFERENCES)
 
-
 class DataStoreOperationsImpl(context: Context) : DataStoreOperations {
     private object PreferenceKey {
         val onBoardingKey = booleanPreferencesKey(name = PREFERENCES_KEY)
