@@ -19,11 +19,13 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
+import androidx.paging.ExperimentalPagingApi
 import com.example.borutoapp.R
 import com.example.borutoapp.navigation.Screen
 import com.example.borutoapp.ui.theme.Purple500
 import com.example.borutoapp.ui.theme.Purple700
 
+@ExperimentalPagingApi
 @Composable
 fun SplashScreen(
     navController: NavHostController,
