@@ -52,7 +52,7 @@ class HeroRemoteMediator @Inject constructor(
                         heroDao.deleteAllHeroes()
                         heroRemoteKeysDao.deleteAllRemoteKeys()
                     }
-                    val prevPage = response.prevPage
+                    val prevPage = response.previousPage
                     val nextPage = response.nextPage
                     val keys = response.heroes.map { hero ->
                         HeroRemoteKeys(
