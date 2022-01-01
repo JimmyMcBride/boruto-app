@@ -30,15 +30,15 @@ class HeroRemoteMediator @Inject constructor(
         val cacheTimeout = 5
         val diffInMinutes = (currentTime - lastUpdated) / 1000 / 60
 
-        Log.d("RemoteMediator", "Current Time: ${parseMillis(currentTime)}")
-        Log.d("RemoteMediator", "Last Updated Time: ${parseMillis(lastUpdated)}")
+//        Log.d("RemoteMediator", "Current Time: ${parseMillis(currentTime)}")
+//        Log.d("RemoteMediator", "Last Updated Time: ${parseMillis(lastUpdated)}")
 
         return if (diffInMinutes.toInt() <= cacheTimeout) {
-            Log.d("RemoteMediator", "Up to date!!!")
+//            Log.d("RemoteMediator", "Up to date!!!")
 
             InitializeAction.SKIP_INITIAL_REFRESH
         } else {
-            Log.d("RemoteMediator", "Refresh!!!")
+//            Log.d("RemoteMediator", "Refresh!!!")
 
             InitializeAction.LAUNCH_INITIAL_REFRESH
         }
@@ -124,10 +124,10 @@ class HeroRemoteMediator @Inject constructor(
             }
     }
 
-    private fun parseMillis(millis: Long): String {
-        val date = Date(millis)
-        val format = SimpleDateFormat("yy.MM.dd HH:mm", Locale.ROOT)
-        return format.format(date)
-    }
+//    private fun parseMillis(millis: Long): String {
+//        val date = Date(millis)
+//        val format = SimpleDateFormat("yy.MM.dd HH:mm", Locale.ROOT)
+//        return format.format(date)
+//    }
 
 }
